@@ -1,0 +1,31 @@
+from time import sleep
+
+print('=' * 50)
+print('CALCULADORA DE PASSAGEM'.center(50))
+print('=' * 50)
+
+sleep(1)
+
+distancia = float(input('\nQual a distância da sua viagem (km)? '))
+
+print('\nCalculando valor...')
+
+sleep(1)
+
+print('\n' + '-' * 50)
+
+print(f'🧳 Distância informada: {distancia:.1f} km')
+sleep(1)
+
+if distancia <= 200:
+    preco = distancia * 0.50
+    tipo = 'Viagem curta'
+else:
+    preco = distancia * 0.45
+    tipo = 'Viagem longa'
+
+print('Tipo de viagem: {}'.format(tipo))
+print('-' * 50)
+sleep(1)
+print('Valor da passagem: R$ {}'.format(preco))
+print('=' * 50)
