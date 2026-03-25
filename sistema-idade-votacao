@@ -1,0 +1,20 @@
+from time import sleep
+
+print('=' * 40)
+print('SISTEMA DE VOTAÇÃO'.center(40))
+print('=' * 40)
+
+idade = int(input('Informe sua idade: '))
+print('\nProcessando...')
+sleep(3)
+
+print('\n' + '-' * 40)
+
+if idade < 16:
+    print('STATUS: NÃO VOTA')
+elif idade < 18:
+    print('STATUS: VOTO OPCIONAL')
+else:
+    print('STATUS: VOTO OBRIGATÓRIO')
+
+print('=' * 40)
