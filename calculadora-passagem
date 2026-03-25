@@ -14,7 +14,7 @@ sleep(1)
 
 print('\n' + '-' * 50)
 
-print(f'🧳 Distância informada: {distancia:.1f} km')
+print('Distância informada: {} km'.format(distancia))
 sleep(1)
 
 if distancia <= 200:
